@@ -1,0 +1,138 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f0f4f8, #e0e7ff);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+h2 {
+    color: #007bff;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+
+p {
+    color: #666;
+    font-size: 1.1em;
+}
+
+.calorie-input {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"], input[type="number"], input[type="date"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, input[type="date"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+input[type="number"] {
+    flex: 1; /* Allow the input to take available space */
+}
+
+.calorie-unit {
+    margin-left: 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+li {
+    background: #e9ecef;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+li:hover {
+    background: #d1d5db;
+}
+
+#summary {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #28a745;
+}
+
+.date-section {
+    margin-top: 20px;
+}
+
+.date-section h2 {
+    margin-top: 30px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
